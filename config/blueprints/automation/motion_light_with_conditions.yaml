@@ -6,11 +6,11 @@ blueprint:
   author: Alejandro Camarillo
   input:
     motion_entity:
-      name: Motion Sensor
+      name: Motion or Occupancy Sensor
       selector:
         entity:
           domain: binary_sensor
-          device_class: motion
+          device_class: ["motion", "occupancy"]
     light_target:
       name: Light
       selector:
